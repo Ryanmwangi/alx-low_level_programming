@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - main block
- * Description: Get a random number and check its last digit, compare it with 5
+ * main - entry block
+ * Description: alphabets in lower and upper
  * Return: 0
  */
 int main(void)
@@ -10,13 +11,16 @@ int main(void)
 
 	while (c <= 'z')
 	{
-		if (c != 'e' && c != 'q')
-		{
-			putchar(c);
-		}
+		putchar(c);
 		c++;
 	}
+	c = 'A';
 
+	while (c <= 'Z')
+	{
+		putchar(c);
+		c++;
+	}
 	putchar('\n');
 	return (0);
 }
