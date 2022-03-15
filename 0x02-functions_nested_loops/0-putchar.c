@@ -1,20 +1,20 @@
 #include "holberton.h"
 /**
- * main - Entry block
- * Description: prints holberton on new line
+ * main - Print "_putchar" followed by a new line.
+ * Description: You are not allowed to include standard libraries.
  * Return: 0
  */
 int main(void)
 {
-	char c[10] = "Holberton";
-
+	char _putchar[] = "_putchar";
 	int i = 0;
 
-	while (i < 9)
+	while (_putchar[i] != '\0')
 	{
-		_putchar(c[i]);
+		_putchar(_putchar[i]);
 		i++;
 	}
 	_putchar('\n');
+
 	return (0);
 }
